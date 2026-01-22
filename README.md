@@ -69,7 +69,7 @@ You are encouraged to inspect the scripts before running them.
 
 The real application lives here:
 
-👉 **[https://github.com/your-org/truetrack](https://github.com/your-org/truetrack)**
+👉 **[https://github.com/Vicky-258/TrueTrack.git](https://github.com/Vicky-258/TrueTrack.git)**
 
 That repository contains:
 
