@@ -52,13 +52,13 @@ The bootstrap does **not**:
 ### Linux / macOS
 
 ```bash
-curl -fsSL https://truetrack.app/install.sh | bash
+curl -fsSL https://vicky-258.github.io/TrueTrack-Bootstrap/install.sh | bash
 ````
 
 ### Windows (PowerShell 7+)
 
 ```powershell
-irm https://truetrack.app/install.ps1 | iex
+irm https://vicky-258.github.io/TrueTrack-Bootstrap/install.ps1 | iex
 ```
 
 You are encouraged to inspect the scripts before running them.
