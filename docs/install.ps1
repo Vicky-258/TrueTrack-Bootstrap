@@ -5,7 +5,7 @@
 $ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
 
-$RepoUrl    = "https://github.com/<your-org>/truetrack.git"
+$RepoUrl    = "https://github.com/Vicky-258/TrueTrack.git"
 $InstallDir = "$env:LOCALAPPDATA\TrueTrack"
 
 Write-Host "TrueTrack Bootstrap Installer"
