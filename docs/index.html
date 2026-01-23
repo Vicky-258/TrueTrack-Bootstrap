@@ -16,9 +16,7 @@
       --error: #F87171;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -28,14 +26,8 @@
       line-height: 1.6;
     }
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .container {
       max-width: 960px;
@@ -43,9 +35,7 @@
       padding: 48px 24px;
     }
 
-    header {
-      margin-bottom: 48px;
-    }
+    header { margin-bottom: 48px; }
 
     header h1 {
       font-size: 2.6rem;
@@ -55,7 +45,7 @@
     header p {
       font-size: 1.1rem;
       color: var(--muted);
-      max-width: 700px;
+      max-width: 720px;
     }
 
     section {
@@ -68,17 +58,10 @@
     section h2 {
       margin-top: 0;
       font-size: 1.4rem;
-      color: var(--text);
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      color: var(--muted);
-    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; color: var(--muted); }
 
     .install-block {
       background: #0E161A;
@@ -90,7 +73,6 @@
 
     pre {
       background: #070C0F;
-      color: var(--text);
       padding: 14px;
       border-radius: 8px;
       overflow-x: auto;
@@ -108,11 +90,6 @@
       font-weight: 500;
     }
 
-    .warning {
-      color: var(--error);
-      font-weight: 500;
-    }
-
     footer {
       margin-top: 64px;
       text-align: center;
@@ -120,103 +97,101 @@
       color: var(--muted);
     }
 
-    footer a {
-      margin: 0 8px;
-    }
+    footer a { margin: 0 8px; }
   </style>
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <header>
-      <h1>TrueTrack</h1>
-      <p>
-        A <strong>local-first, self-hosted media intelligence tool</strong> that runs entirely
-        on your machine and opens in your browser.
-        No cloud. No accounts. No background services.
-      </p>
-    </header>
+  <header>
+    <h1>TrueTrack</h1>
+    <p>
+      A <strong>local-first, self-hosted media intelligence system</strong>.
+      It runs entirely on your machine and opens in your browser.
+      No cloud services. No accounts. No always-on background processes.
+    </p>
+  </header>
 
-    <section>
-      <h2>What happens when you install this?</h2>
-      <ul>
-        <li>Downloads the open-source TrueTrack code to your machine</li>
-        <li>Installs required dependencies <em>with your permission</em></li>
-        <li>Runs a local server on your system</li>
-        <li>Opens the app in your default browser</li>
-        <li>Nothing runs in the background when you stop it</li>
-      </ul>
-      <p class="success">✔ Your data never leaves your machine.</p>
-    </section>
+  <section>
+    <h2>What does installing TrueTrack actually do?</h2>
+    <ul>
+      <li>Clones the open-source TrueTrack repository onto your machine</li>
+      <li>Installs required dependencies only after asking for permission</li>
+      <li>Starts a local server under your control</li>
+      <li>Launches the web interface in your default browser</li>
+      <li>Stops completely when you close it — nothing keeps running</li>
+    </ul>
+    <p class="success">✔ All data stays local. Always.</p>
+  </section>
 
-    <section>
-      <h2>Install</h2>
+  <section>
+    <h2>Install</h2>
 
-      <div class="install-block">
-        <strong>Linux / macOS</strong>
-        <pre><code>curl -fsSL https://truetrack.app/install.sh | bash</code></pre>
-      </div>
+    <div class="install-block">
+      <strong>Linux / macOS</strong>
+      <pre><code>curl -fsSL https://truetrack.app/install.sh | bash</code></pre>
+    </div>
 
-      <div class="install-block">
-        <strong>Windows (PowerShell 7+)</strong>
-        <pre><code>irm https://truetrack.app/install.ps1 | iex</code></pre>
-      </div>
+    <div class="install-block">
+      <strong>Windows (PowerShell 7+)</strong>
+      <pre><code>irm https://truetrack.app/install.ps1 | iex</code></pre>
+    </div>
 
-      <p class="note">
-        🔍 Prefer to inspect first?
-        <a href="https://github.com/your-org/TrueTrack-bootstrap" target="_blank">
-          View installer source on GitHub
-        </a>
-      </p>
-    </section>
+    <p class="note">
+      🔍 Want to inspect the installer first?
+      <a href="https://github.com/your-org/TrueTrack-bootstrap" target="_blank">
+        View the source code on GitHub
+      </a>
+    </p>
+  </section>
 
-    <section>
-      <h2>After installation</h2>
-      <ul>
-        <li>Start TrueTrack using the desktop launcher or the <code>truetrack</code> command</li>
-        <li>The app opens in your browser at <code>http://localhost:8000</code></li>
-        <li>Stop it anytime with <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
-      </ul>
-    </section>
+  <section>
+    <h2>After installation</h2>
+    <ul>
+      <li>Start TrueTrack using the desktop launcher or the <code>truetrack</code> command</li>
+      <li>The interface opens at <code>http://localhost:8000</code></li>
+      <li>Stop everything instantly with <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Security & Transparency</h2>
-      <ul>
-        <li>No telemetry</li>
-        <li>No auto-start on boot</li>
-        <li>No background services</li>
-        <li>Fully open source</li>
-        <li>Easy uninstall: delete the install folder</li>
-      </ul>
+  <section>
+    <h2>Security & transparency</h2>
+    <ul>
+      <li>No telemetry or tracking</li>
+      <li>No automatic startup on boot</li>
+      <li>No hidden background services</li>
+      <li>Fully open source</li>
+      <li>Uninstall by deleting the install directory</li>
+    </ul>
 
-      <p class="note">
-        This installer only clones the repository and hands control to the real installer.
-        You can audit it in under a minute.
-      </p>
-    </section>
+    <p class="note">
+      The bootstrap script only fetches the repository and hands off control.
+      You can audit it in under a minute.
+    </p>
+  </section>
 
-    <section>
-      <h2>Who is this for?</h2>
-      <ul>
-        <li>People who want local-only tools</li>
-        <li>Self-hosters and power users</li>
-        <li>Anyone tired of cloud-locked software</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Who is this built for?</h2>
+    <ul>
+      <li>People who want their tools to stay local</li>
+      <li>Self-hosters and technical users</li>
+      <li>Anyone tired of cloud-locked software</li>
+    </ul>
+  </section>
 
-    <footer>
-      <p>
-        <a href="https://github.com/Vicky-258/TrueTrack.git" target="_blank">Main Repository</a>
-        ·
-        <a href="https://github.com/Vicky-258/TrueTrack-Bootstrap.git" target="_blank">Bootstrap Repo</a>
-        ·
-        <a href="https://github.com/Vicky-258/TrueTrack.git/blob/main/SECURITY.md" target="_blank">Security</a>
-      </p>
-      <p>TrueTrack — run locally, stay in control.</p>
-    </footer>
+  <footer>
+    <p>
+      <a href="https://github.com/Vicky-258/TrueTrack.git" target="_blank">Main Repository</a>
+      ·
+      <a href="https://github.com/Vicky-258/TrueTrack-Bootstrap.git" target="_blank">Bootstrap</a>
+      ·
+      <a href="https://github.com/Vicky-258/TrueTrack.git/blob/main/SECURITY.md" target="_blank">Security</a>
+    </p>
+    <p>TrueTrack — local by design, controlled by you.</p>
+  </footer>
 
-  </div>
+</div>
 
 </body>
 </html>
